@@ -6,16 +6,17 @@
   <title>笔记 | 许鑫鑫的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-    <meta name="keywords" content="许's Blog">
+    <meta name="keywords" content="许鑫鑫的博客">
   
   <meta name="description" content="hexo + github 搭建个人博客 node环境配置##linux操作系统1.浏览器打开 https://nodejs.org,下载10.14.2版2.默认下载到 /root/下载 路径下 解压1tar -xf node-v18.14.2-linux-x64.tar 3.创建node和npm的软链接    ln -s /root/下载/node-v10.14.2-linux-x64    /">
+<meta name="keywords" content="hexo,githup,域名">
 <meta property="og:type" content="article">
 <meta property="og:title" content="笔记">
 <meta property="og:url" content="http://localhost:4000/2018/12/24/笔记/index.html">
 <meta property="og:site_name" content="许鑫鑫的博客">
 <meta property="og:description" content="hexo + github 搭建个人博客 node环境配置##linux操作系统1.浏览器打开 https://nodejs.org,下载10.14.2版2.默认下载到 /root/下载 路径下 解压1tar -xf node-v18.14.2-linux-x64.tar 3.创建node和npm的软链接    ln -s /root/下载/node-v10.14.2-linux-x64    /">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-12-25T09:12:08.547Z">
+<meta property="og:updated_time" content="2018-12-26T07:56:36.710Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="笔记">
 <meta name="twitter:description" content="hexo + github 搭建个人博客 node环境配置##linux操作系统1.浏览器打开 https://nodejs.org,下载10.14.2版2.默认下载到 /root/下载 路径下 解压1tar -xf node-v18.14.2-linux-x64.tar 3.创建node和npm的软链接    ln -s /root/下载/node-v10.14.2-linux-x64    /">
@@ -41,7 +42,7 @@
         <div id="header-menu" class="header-menu-pos animated">
             <div class="header-menu-container">
                 <a href="/" class="left">
-                    <span class="site-title">123&#39;s Blog</span>
+                    <span class="site-title">许鑫鑫的博客</span>
                 </a>
                 <nav id="header-menu-nav" class="right">
                     
@@ -76,7 +77,7 @@
                 <div id="header-title">
                     
                     <h2>
-                        123&#39;s Blog
+                        许鑫鑫的博客
                     </h2>
                     
                 </div>
@@ -121,6 +122,15 @@
     <div class="post-title-bar">
       <ul>
           
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/笔记/">笔记</a>
+                  
+                      <a href="/categories/教程/">教程</a>
+                  
+              </li>
+          
         <li>
           <i class="fa fa-calendar"></i>  2018-12-24
         </li>
@@ -152,6 +162,33 @@
 <p>##编译代码<br> hexo g 将通过框架将md格式的文档转化为html+css+js</p>
 <p>##推送<br>1.安装deploy依赖包<br>npm install hexo_deployer-git –save<br>2.上传<br>hexo d</p>
 <p>##清理缓存<br>hexo clean</p>
+<h1 id="域名绑定"><a href="#域名绑定" class="headerlink" title="域名绑定"></a>域名绑定</h1><h2 id="域名解析"><a href="#域名解析" class="headerlink" title="域名解析"></a>域名解析</h2><table>
+<thead>
+<tr>
+<th>记录类型</th>
+<th>主机记录</th>
+<th>记录值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CNAME</td>
+<td>WWW</td>
+<td>用户名.github.io</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.153</td>
+</tr>
+<tr>
+<td>A</td>
+<td>@</td>
+<td>192.30.252.154</td>
+</tr>
+</tbody>
+</table>
+<p>##创建CNAME<br>在blog/source路径下新建一个叫CNAME的文件（不带后缀）<br>在文件内填写自己的域名， 如：（baidu.com）</p>
 <p>#回家之后<br>1.安装node<br>2.安装hexo脚手架<br>3.安装git<br>    打开 <a href="https://git-scm.com" target="_blank" rel="noopener">https://git-scm.com</a><br>4.初始化项目<br>在桌面空白区域右键选择“git bash here”<br>git int blog<br>5.进入blog<br>    cd blogj<br>6.安装依赖<br>    upm install</p>
 <ol start="7">
 <li>启动服务<br>hexo s</li>
@@ -160,7 +197,7 @@
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年12月25日 17:12</p>
+        <p>最后更新： 2018年12月26日 15:56</p>
         <p>原始链接： <a class="post-url" href="/2018/12/24/笔记/" title="笔记">http://localhost:4000/2018/12/24/笔记/</a></p>
         <footer>
             <a href="http://localhost:4000">
@@ -218,7 +255,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 许鑫鑫的博客&pic=http://localhost:4000images/logo.png" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://localhost:4000/2018/12/24/笔记/&title=《笔记》 — 许鑫鑫的博客&pic=/images/blog.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -262,6 +299,17 @@
         <ul class="article-footer-menu">
             
             
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/hexo/" class="color5">hexo</a>
+      
+    <a href="/tags/githup/" class="color2">githup</a>
+      
+    <a href="/tags/域名/" class="color3">域名</a>
+      
+  </li>
+
         </ul>
         
     </footer>
@@ -271,7 +319,7 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下："><span class="post-toc-text">windows环境下：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#node环境配置"><span class="post-toc-text">node环境配置</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#windows环境下："><span class="post-toc-text">windows环境下：</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#进入blog目录"><span class="post-toc-text">进入blog目录</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#安装项目依赖包"><span class="post-toc-text">安装项目依赖包</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#启动项目服务"><span class="post-toc-text">启动项目服务</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#预览项目"><span class="post-toc-text">预览项目</span></a></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#域名绑定"><span class="post-toc-text">域名绑定</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#域名解析"><span class="post-toc-text">域名解析</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
@@ -380,10 +428,10 @@
 <div class="sidebar-menu-box" id="sidebar-menu-box">
     <div class="sidebar-menu-box-container">
         <div id="sidebar-menu-box-categories">
-            
+            <a class="category-link" href="/categories/笔记/">笔记</a><a class="category-link" href="/categories/笔记/教程/">教程</a>
         </div>
         <div id="sidebar-menu-box-tags">
-            
+            <a href="/tags/githup/" style="font-size: 10px;">githup</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a>
         </div>
     </div>
     <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
@@ -416,7 +464,7 @@
     <div class="mobile-header-tag-container">
         <span class="title">Tags</span>
         <div id="mobile-header-container-tags">
-            
+            <a href="/tags/githup/" style="font-size: 10px;">githup</a> <a href="/tags/hexo/" style="font-size: 10px;">hexo</a> <a href="/tags/markdown/" style="font-size: 10px;">markdown</a> <a href="/tags/域名/" style="font-size: 10px;">域名</a> <a href="/tags/语法/" style="font-size: 10px;">语法</a>
         </div>
     </div>
 </div>
